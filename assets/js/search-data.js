@@ -30,15 +30,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-testing-new-product-launches-on-moutai-39-s-dtc-platform",
+        },{id: "post-moutai-39-s-investment-thesis",
       
-        title: "Testing New Product Launches on Moutai&#39;s DTC Platform",
+        title: "Moutai&#39;s Investment Thesis",
       
-      description: "Kweichow Moutai&#39;s decision to sell standard Feitian on its iMoutai app marks a landmark shift in distribution strategy — with implications for brand, margin, and moat.",
+      description: "Moutai trades at a 25-35% discount to intrinsic value. We examine the opportunity, address key market fears, and lay out our long-term investment thesis.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2026/moutai-dtc-platform/";
+          window.location.href = "/blog/2026/moutai-investment-thesis/";
         
       },
     },{id: "post-moutai-39-s-moat",
@@ -49,18 +49,18 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/moutai-moat/";
+          window.location.href = "/blog/2026/moutai-moat/";
         
       },
-    },{id: "post-moutai-39-s-investment-thesis",
+    },{id: "post-testing-new-product-launches-on-moutai-39-s-dtc-platform",
       
-        title: "Moutai&#39;s Investment Thesis",
+        title: "Testing New Product Launches on Moutai&#39;s DTC Platform",
       
-      description: "Moutai trades at a 25-35% discount to intrinsic value. We examine the opportunity, address key market fears, and lay out our long-term investment thesis.",
+      description: "Kweichow Moutai&#39;s decision to sell standard Feitian on its iMoutai app marks a landmark shift in distribution strategy — with implications for brand, margin, and moat.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/moutai-investment-thesis/";
+          window.location.href = "/blog/2026/moutai-dtc-platform/";
         
       },
     },{id: "news-a-simple-inline-announcement",
