@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moutai's Investment Thesis
-date: 2025-11-01 00:00:00
+date: 2026-03-15 00:00:00
 description: Moutai trades at a 25-35% discount to intrinsic value. We examine the opportunity, address key market fears, and lay out our long-term investment thesis.
 tags: moutai
 categories: investment
