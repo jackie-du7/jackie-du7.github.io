@@ -289,6 +289,8 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-weight: 600;
+    text-transform: capitalize;
 
     &:hover {
       color: var(--global-hover-color);
@@ -426,11 +428,23 @@ ul.task-list input[type="checkbox"] {
         transition-property: all 0.2s ease-in-out;
       }
 
+      svg.social-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 0.5rem;
+        fill: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
       &:hover {
         text-decoration: none;
 
         i::before {
           color: var(--global-theme-color);
+        }
+
+        svg.social-icon {
+          fill: var(--global-theme-color);
         }
       }
     }
