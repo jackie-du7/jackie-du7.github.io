@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-moutai-39-s-investment-thesis",
+        },{id: "post-first-impressions-visiting-pop-mart-39-s-store-in-norwalk-connecticut",
+      
+        title: "First Impressions: Visiting Pop Mart&#39;s Store in Norwalk, Connecticut",
+      
+      description: "Outside of large metropolitan cities, do Americans know what Pop Mart is? Are they buying?",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/popmart-norwalk/";
+        
+      },
+    },{id: "post-moutai-39-s-investment-thesis",
       
         title: "Moutai&#39;s Investment Thesis",
       
