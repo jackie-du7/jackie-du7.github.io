@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /blog/
-title: blog
+permalink: /
+title: articles
 nav: true
 nav_order: 1
 pagination:
@@ -29,32 +29,22 @@ pagination:
   </div>
   {% endif %}
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+<p style="font-size: 0.9rem; margin-top: 0.5rem; text-align: center;">
+  Also published on <a href="https://substack.com/@queensquayperspectives" target="_blank">Substack</a> — subscribe there to get new articles in your inbox.
+</p>
 
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+{% if site.display_tags and site.display_tags.size > 0 %}
+<div style="text-align: center; margin: 1.5rem 0 0.5rem;">
+  {% for tag in site.display_tags %}
+    <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl }}"
+       style="display: inline-block; margin: 0.25rem 0.3rem; padding: 0.3rem 0.9rem; border: 1px solid var(--global-theme-color); border-radius: 20px; font-size: 0.85rem; color: var(--global-theme-color); text-decoration: none; transition: background 0.2s, color 0.2s;"
+       onmouseover="this.style.background='var(--global-theme-color)'; this.style.color='#fff';"
+       onmouseout="this.style.background=''; this.style.color='var(--global-theme-color)';">
+      {{ tag | capitalize }}
+    </a>
+  {% endfor %}
+</div>
+{% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
@@ -62,18 +52,18 @@ pagination:
 
 <div class="container featured-posts">
 {% assign is_even = featured_posts.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
+<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %} align-items-stretch">
 {% for post in featured_posts %}
 <div class="col mb-4">
 <a href="{{ post.url | relative_url }}">
-<div class="card hoverable">
+<div class="card hoverable h-100">
 <div class="row g-0">
 <div class="col-md-12">
 <div class="card-body">
 <div class="float-right">
 <i class="fa-solid fa-thumbtack fa-xs"></i>
 </div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
+<h3 class="card-title">{{ post.title }}</h3>
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
