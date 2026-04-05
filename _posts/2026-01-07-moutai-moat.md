@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moutai's Moat
-date: 2025-12-01 00:00:00
+date: 2026-01-07 00:00:00
 description: Product quality and cautious culture are equally important in shaping Moutai's brand equity — forming a virtuous cycle that competitors have been unable to replicate.
 tags: moutai
 categories: investment

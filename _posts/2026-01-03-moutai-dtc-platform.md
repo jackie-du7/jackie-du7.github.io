@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing New Product Launches on Moutai's DTC Platform
-date: 2026-01-04 00:00:00
+date: 2026-01-03 00:00:00
 description: Kweichow Moutai's decision to sell standard Feitian on its iMoutai app marks a landmark shift in distribution strategy — with implications for brand, margin, and moat.
 tags: moutai
 categories: investment
