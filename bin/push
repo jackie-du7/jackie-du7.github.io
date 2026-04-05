@@ -1,0 +1,18 @@
+#!/bin/zsh
+# Push current branch to origin using the jackie-du7 SSH key
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+echo "Pushing branch '$BRANCH' to origin..."
+
+ssh-add -d ~/.ssh/id_ed25519 2>/dev/null
+git push origin "$BRANCH"
+EXIT_CODE=$?
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519 2>/dev/null
+
+if [ $EXIT_CODE -eq 0 ]; then
+  echo "Done."
+else
+  echo "Push failed."
+  exit $EXIT_CODE
+fi
