@@ -264,7 +264,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ['moutai', 'popmart']
+display_tags: ['moutai', 'popmart', 'berkshire']
 display_categories: []
 
 # -----------------------------------------------------------------------------
