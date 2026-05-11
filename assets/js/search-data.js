@@ -30,18 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-my-visit-to-omaha-the-view-from-the-exhibition-floor",
-      
-        title: "My Visit to Omaha: The View from the Exhibition Floor",
-      
-      description: "A visit to the 2026 Berkshire Hathaway meeting — observations from the Exhibition Hall, Nebraska Furniture Mart, and twenty-seven subsidiaries.",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2026/berkshire-exhibition-floor/";
-        
-      },
-    },{id: "post-first-impressions-visiting-pop-mart-39-s-store-in-norwalk-connecticut",
+        },{id: "post-first-impressions-visiting-pop-mart-39-s-store-in-norwalk-connecticut",
       
         title: "First Impressions: Visiting Pop Mart&#39;s Store in Norwalk, Connecticut",
       
